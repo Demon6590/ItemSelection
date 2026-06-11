@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ItemSelection.ViewModels"
+             xmlns:с="clr-namespace:ItemSelection.Views" 
+             x:Class="ItemSelection.Views.ItemsView"
+             x:DataType="vm:ItemsViewModel">
+        <UserControl.DataContext>
+                <vm:ItemsViewModel/>
+        </UserControl.DataContext>
+    <StackPanel>
+        <с:StudentExpanderControl Header="Математика"/>
+        <с:StudentExpanderControl Header="Программирование"/>
+    </StackPanel>
+</UserControl>

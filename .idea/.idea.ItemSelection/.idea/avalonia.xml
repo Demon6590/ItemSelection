@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ItemSelection/App.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/UserControl/ExpanderControl.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/UserControl/StudentExpanderControl.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/Items.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/ItemsView.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/MainWindow.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/StudentView.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/Students.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/StudentsView.axaml" value="ItemSelection/ItemSelection.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

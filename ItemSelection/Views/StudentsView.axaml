@@ -1,0 +1,32 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:ItemSelection.ViewModels"
+             xmlns:models="clr-namespace:ItemSelection.Models"
+             x:Class="ItemSelection.Views.StudentsView"
+             x:DataType="vm:StudentsViewModel">
+    <UserControl.DataContext>
+        <vm:StudentsViewModel/>
+    </UserControl.DataContext>
+<ListBox ItemsSource="{Binding Students}" Margin="10">
+        <ListBox.ItemTemplate>
+            <DataTemplate x:DataType="models:Student">
+                <StackPanel Orientation="Vertical" Margin="0,5">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{Binding FirstName}" FontSize="16"/>
+                        <TextBlock Text="{Binding LastName}" FontSize="16"/>
+                        <TextBlock Text="{Binding Patronymic}" FontSize="16"/>
+                    </StackPanel>
+                    <ItemsControl ItemsSource="{Binding Items}" Margin="0,2,0,0">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <TextBlock Text="{Binding ., StringFormat='{}{0}'}" 
+                                           FontSize="14"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</UserControl>
