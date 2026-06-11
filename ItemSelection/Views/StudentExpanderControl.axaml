@@ -1,14 +1,22 @@
 ﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:models="clr-namespace:ItemSelection.Models"
+             xmlns:local="clr-namespace:ItemSelection" 
              x:Class="ItemSelection.Views.StudentExpanderControl"
              x:DataType="models:Student"
              x:Name="Control">
     <Expander Header="{Binding ElementName=Control, Path=Header, Mode=OneWay}" >
-        <StackPanel Orientation="Horizontal" Spacing="6">
-            <TextBlock Text="{Binding FirstName}" FontSize="16"/>
-            <TextBlock Text="{Binding LastName}" FontSize="16"/>
-            <TextBlock Text="{Binding Patronymic}" FontSize="16"/>
-        </StackPanel>
+        <ListBox ItemsSource="{Binding Source={x:Static local:App.Students}}" Margin="10">
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="models:Student">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <TextBlock Text="{Binding FirstName}" FontSize="16"/>
+                        <TextBlock Text="{Binding LastName}" FontSize="16"/>
+                        <TextBlock Text="{Binding Patronymic}" FontSize="16"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Expander>   
 </UserControl>

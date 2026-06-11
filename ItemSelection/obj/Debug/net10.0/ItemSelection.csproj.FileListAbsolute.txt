@@ -97,3 +97,4 @@ C:\Users\college\RiderProjects\ItemSelection\ItemSelection\obj\Debug\net10.0\ref
 C:\Users\college\RiderProjects\ItemSelection\ItemSelection\obj\Debug\net10.0\ItemSelection.pdb
 C:\Users\college\RiderProjects\ItemSelection\ItemSelection\obj\Debug\net10.0\ItemSelection.genruntimeconfig.cache
 C:\Users\college\RiderProjects\ItemSelection\ItemSelection\obj\Debug\net10.0\ref\ItemSelection.dll
+C:\Users\college\RiderProjects\ItemSelection\ItemSelection\obj\Debug\net10.0\ItemSelection.sourcelink.json
