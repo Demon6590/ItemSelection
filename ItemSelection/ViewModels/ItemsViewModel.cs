@@ -5,9 +5,8 @@ namespace ItemSelection.ViewModels;
 
 public partial class ItemsViewModel : ViewModelBase
 {
-
     [ReactiveCommand]
-    private void AddItemToStudent(Student student, string itemName)
+    public void AddItemToStudent(Student student, string itemName)
     {
         if (!student.Items.Contains(itemName))
         {

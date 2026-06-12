@@ -6,11 +6,13 @@
              x:DataType="models:Student"
              x:Name="Control">
     <Expander Header="{Binding ElementName=Control, Path=Header, Mode=OneWay}" >
-        <ListBox ItemsSource="{Binding Source={x:Static local:App.Students}}" Margin="10">
-            
+        <ListBox x:Name="StudentsList" ItemsSource="{Binding Source={x:Static local:App.Students}}" Margin="10">
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="models:Student">
-                    <StackPanel Orientation="Horizontal" Spacing="6">
+                    <StackPanel Orientation="Horizontal" 
+                                Spacing="6" 
+                                Background="Transparent" 
+                                Tapped="Student_Tapped">
                         <TextBlock Text="{Binding FirstName}" FontSize="16"/>
                         <TextBlock Text="{Binding LastName}" FontSize="16"/>
                         <TextBlock Text="{Binding Patronymic}" FontSize="16"/>

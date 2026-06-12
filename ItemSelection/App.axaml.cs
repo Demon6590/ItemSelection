@@ -10,7 +10,12 @@ namespace ItemSelection;
 
 public partial class App : Application
 {
-    public static List<Student> Students =[];
+    public static List<Student> Students =
+    [
+        new ("Иванов", "Иван", "Иванович", ["Математика", "Физика", "Информатика"]),
+        new ("Петров", "Петр", "Петрович", ["История", "Философия"]),
+        new ("Сидорова", "Анна", "Сергеевна", ["Химия", "Биология", "Английский"])
+    ];
     
     public override void Initialize()
     {

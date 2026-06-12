@@ -9,6 +9,7 @@
         <entry key="ItemSelection/Views/Items.axaml" value="ItemSelection/ItemSelection.csproj" />
         <entry key="ItemSelection/Views/ItemsView.axaml" value="ItemSelection/ItemSelection.csproj" />
         <entry key="ItemSelection/Views/MainWindow.axaml" value="ItemSelection/ItemSelection.csproj" />
+        <entry key="ItemSelection/Views/StudentExpanderControl.axaml" value="ItemSelection/ItemSelection.csproj" />
         <entry key="ItemSelection/Views/StudentView.axaml" value="ItemSelection/ItemSelection.csproj" />
         <entry key="ItemSelection/Views/Students.axaml" value="ItemSelection/ItemSelection.csproj" />
         <entry key="ItemSelection/Views/StudentsView.axaml" value="ItemSelection/ItemSelection.csproj" />

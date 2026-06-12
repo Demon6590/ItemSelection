@@ -8,7 +8,7 @@
                 <vm:ItemsViewModel/>
         </UserControl.DataContext>
     <StackPanel>
-        <с:StudentExpanderControl Header="Математика"/>
+        <с:StudentExpanderControl Header="Математика" />
         <с:StudentExpanderControl Header="Программирование"/>
     </StackPanel>
 </UserControl>
